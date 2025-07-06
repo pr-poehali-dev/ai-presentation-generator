@@ -155,7 +155,7 @@ const Index = () => {
 
       {/* Pricing Section */}
       <section id="pricing" className="py-20 px-4 bg-gray-50">
-        <div className="container mx-auto max-w-4xl">
+        <div className="container mx-auto max-w-6xl">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-gray-900 mb-4">
               Простые цены
@@ -164,136 +164,173 @@ const Index = () => {
               Выберите план, который подходит именно вам
             </p>
           </div>
-          <div className="grid md:grid-cols-3 gap-8">
-            <Card className="border-0 shadow-lg">
-              <CardHeader className="text-center">
-                <CardTitle className="text-2xl">Стартовый</CardTitle>
-                <div className="text-4xl font-bold text-gray-900 mt-4">
-                  ₽299
+          <div className="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
+            {/* Стартовый план */}
+            <Card className="bg-white border-0 shadow-lg hover:shadow-xl transition-all duration-300 rounded-2xl overflow-hidden">
+              <CardHeader className="text-center pb-8 pt-8">
+                <CardTitle className="text-2xl font-semibold text-gray-900 mb-6">
+                  Стартовый
+                </CardTitle>
+                <div className="mb-2">
+                  <span className="text-5xl font-bold text-gray-900">₽299</span>
                 </div>
                 <p className="text-gray-600">в месяц</p>
               </CardHeader>
-              <CardContent>
-                <ul className="space-y-3">
-                  <li className="flex items-center">
+              <CardContent className="px-8 pb-8">
+                <ul className="space-y-4 mb-8">
+                  <li className="flex items-start">
                     <Icon
                       name="Check"
-                      size={16}
-                      className="text-green-600 mr-3"
+                      size={20}
+                      className="text-green-500 mr-3 mt-0.5 flex-shrink-0"
                     />
-                    <span>10 презентаций в месяц</span>
+                    <span className="text-gray-700">
+                      10 презентаций в месяц
+                    </span>
                   </li>
-                  <li className="flex items-center">
+                  <li className="flex items-start">
                     <Icon
                       name="Check"
-                      size={16}
-                      className="text-green-600 mr-3"
+                      size={20}
+                      className="text-green-500 mr-3 mt-0.5 flex-shrink-0"
                     />
-                    <span>Базовые шаблоны</span>
+                    <span className="text-gray-700">Базовые шаблоны</span>
                   </li>
-                  <li className="flex items-center">
+                  <li className="flex items-start">
                     <Icon
                       name="Check"
-                      size={16}
-                      className="text-green-600 mr-3"
+                      size={20}
+                      className="text-green-500 mr-3 mt-0.5 flex-shrink-0"
                     />
-                    <span>Экспорт в PDF</span>
+                    <span className="text-gray-700">Экспорт в PDF</span>
                   </li>
                 </ul>
-                <Button className="w-full mt-6">Выбрать план</Button>
+                <Button
+                  variant="outline"
+                  className="w-full h-12 rounded-full font-semibold border-2 border-gray-200 hover:border-gray-300 text-gray-700 hover:bg-gray-50 transition-all"
+                >
+                  Выбрать план
+                </Button>
               </CardContent>
             </Card>
-            <Card className="border-2 border-blue-200 shadow-xl scale-105">
-              <CardHeader className="text-center">
-                <Badge className="mb-2 bg-blue-600">Популярный</Badge>
-                <CardTitle className="text-2xl">Профессиональный</CardTitle>
-                <div className="text-4xl font-bold text-gray-900 mt-4">
-                  ₽699
+
+            {/* Профессиональный план */}
+            <Card className="bg-white border-2 border-blue-200 shadow-xl hover:shadow-2xl transition-all duration-300 rounded-2xl overflow-hidden relative scale-105">
+              <div className="absolute -top-0 left-1/2 transform -translate-x-1/2">
+                <div className="bg-blue-600 text-white px-6 py-2 rounded-full text-sm font-semibold">
+                  Популярный
+                </div>
+              </div>
+              <CardHeader className="text-center pb-8 pt-12">
+                <CardTitle className="text-2xl font-semibold text-gray-900 mb-6">
+                  Профессиональный
+                </CardTitle>
+                <div className="mb-2">
+                  <span className="text-5xl font-bold text-gray-900">₽699</span>
                 </div>
                 <p className="text-gray-600">в месяц</p>
               </CardHeader>
-              <CardContent>
-                <ul className="space-y-3">
-                  <li className="flex items-center">
+              <CardContent className="px-8 pb-8">
+                <ul className="space-y-4 mb-8">
+                  <li className="flex items-start">
                     <Icon
                       name="Check"
-                      size={16}
-                      className="text-green-600 mr-3"
+                      size={20}
+                      className="text-green-500 mr-3 mt-0.5 flex-shrink-0"
                     />
-                    <span>Безлимитные презентации</span>
+                    <span className="text-gray-700">
+                      Безлимитные презентации
+                    </span>
                   </li>
-                  <li className="flex items-center">
+                  <li className="flex items-start">
                     <Icon
                       name="Check"
-                      size={16}
-                      className="text-green-600 mr-3"
+                      size={20}
+                      className="text-green-500 mr-3 mt-0.5 flex-shrink-0"
                     />
-                    <span>Премиум шаблоны</span>
+                    <span className="text-gray-700">Премиум шаблоны</span>
                   </li>
-                  <li className="flex items-center">
+                  <li className="flex items-start">
                     <Icon
                       name="Check"
-                      size={16}
-                      className="text-green-600 mr-3"
+                      size={20}
+                      className="text-green-500 mr-3 mt-0.5 flex-shrink-0"
                     />
-                    <span>Все форматы экспорта</span>
+                    <span className="text-gray-700">Все форматы экспорта</span>
                   </li>
-                  <li className="flex items-center">
+                  <li className="flex items-start">
                     <Icon
                       name="Check"
-                      size={16}
-                      className="text-green-600 mr-3"
+                      size={20}
+                      className="text-green-500 mr-3 mt-0.5 flex-shrink-0"
                     />
-                    <span>Приоритетная поддержка</span>
+                    <span className="text-gray-700">
+                      Приоритетная поддержка
+                    </span>
                   </li>
                 </ul>
-                <Button className="w-full mt-6">Выбрать план</Button>
+                <Button className="w-full h-12 rounded-full font-semibold bg-blue-600 hover:bg-blue-700 text-white transition-all">
+                  Выбрать план
+                </Button>
               </CardContent>
             </Card>
-            <Card className="border-0 shadow-lg">
-              <CardHeader className="text-center">
-                <CardTitle className="text-2xl">Корпоративный</CardTitle>
-                <div className="text-4xl font-bold text-gray-900 mt-4">
-                  ₽1999
+
+            {/* Корпоративный план */}
+            <Card className="bg-white border-0 shadow-lg hover:shadow-xl transition-all duration-300 rounded-2xl overflow-hidden">
+              <CardHeader className="text-center pb-8 pt-8">
+                <CardTitle className="text-2xl font-semibold text-gray-900 mb-6">
+                  Корпоративный
+                </CardTitle>
+                <div className="mb-2">
+                  <span className="text-5xl font-bold text-gray-900">
+                    ₽1999
+                  </span>
                 </div>
                 <p className="text-gray-600">в месяц</p>
               </CardHeader>
-              <CardContent>
-                <ul className="space-y-3">
-                  <li className="flex items-center">
+              <CardContent className="px-8 pb-8">
+                <ul className="space-y-4 mb-8">
+                  <li className="flex items-start">
                     <Icon
                       name="Check"
-                      size={16}
-                      className="text-green-600 mr-3"
+                      size={20}
+                      className="text-green-500 mr-3 mt-0.5 flex-shrink-0"
                     />
-                    <span>Неограниченные презентации</span>
+                    <span className="text-gray-700">
+                      Неограниченные презентации
+                    </span>
                   </li>
-                  <li className="flex items-center">
+                  <li className="flex items-start">
                     <Icon
                       name="Check"
-                      size={16}
-                      className="text-green-600 mr-3"
+                      size={20}
+                      className="text-green-500 mr-3 mt-0.5 flex-shrink-0"
                     />
-                    <span>Командная работа</span>
+                    <span className="text-gray-700">Командная работа</span>
                   </li>
-                  <li className="flex items-center">
+                  <li className="flex items-start">
                     <Icon
                       name="Check"
-                      size={16}
-                      className="text-green-600 mr-3"
+                      size={20}
+                      className="text-green-500 mr-3 mt-0.5 flex-shrink-0"
                     />
-                    <span>Кастомные шаблоны</span>
+                    <span className="text-gray-700">Кастомные шаблоны</span>
                   </li>
-                  <li className="flex items-center">
+                  <li className="flex items-start">
                     <Icon
                       name="Check"
-                      size={16}
-                      className="text-green-600 mr-3"
+                      size={20}
+                      className="text-green-500 mr-3 mt-0.5 flex-shrink-0"
                     />
-                    <span>Персональный менеджер</span>
+                    <span className="text-gray-700">Персональный менеджер</span>
                   </li>
                 </ul>
-                <Button className="w-full mt-6">Связаться с нами</Button>
+                <Button
+                  variant="outline"
+                  className="w-full h-12 rounded-full font-semibold border-2 border-gray-200 hover:border-gray-300 text-gray-700 hover:bg-gray-50 transition-all"
+                >
+                  Связаться с нами
+                </Button>
               </CardContent>
             </Card>
           </div>
