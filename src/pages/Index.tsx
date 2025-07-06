@@ -166,8 +166,8 @@ const Index = () => {
           </div>
           <div className="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
             {/* Стартовый план */}
-            <Card className="bg-white border-0 shadow-lg hover:shadow-xl transition-all duration-300 rounded-2xl overflow-hidden">
-              <CardHeader className="text-center pb-8 pt-8">
+            <Card className="bg-white border-0 shadow-lg hover:shadow-xl transition-all duration-300 rounded-2xl overflow-hidden h-full flex flex-col">
+              <CardHeader className="text-center pb-6 pt-8 flex-shrink-0">
                 <CardTitle className="text-2xl font-semibold text-gray-900 mb-6">
                   Стартовый
                 </CardTitle>
@@ -176,31 +176,31 @@ const Index = () => {
                 </div>
                 <p className="text-gray-600">в месяц</p>
               </CardHeader>
-              <CardContent className="px-8 pb-8">
-                <ul className="space-y-4 mb-8">
-                  <li className="flex items-start">
+              <CardContent className="px-8 pb-8 flex-grow flex flex-col justify-between">
+                <ul className="space-y-4 mb-8 flex-grow">
+                  <li className="flex items-center">
                     <Icon
                       name="Check"
                       size={20}
-                      className="text-green-500 mr-3 mt-0.5 flex-shrink-0"
+                      className="text-green-500 mr-3 flex-shrink-0"
                     />
                     <span className="text-gray-700">
                       10 презентаций в месяц
                     </span>
                   </li>
-                  <li className="flex items-start">
+                  <li className="flex items-center">
                     <Icon
                       name="Check"
                       size={20}
-                      className="text-green-500 mr-3 mt-0.5 flex-shrink-0"
+                      className="text-green-500 mr-3 flex-shrink-0"
                     />
                     <span className="text-gray-700">Базовые шаблоны</span>
                   </li>
-                  <li className="flex items-start">
+                  <li className="flex items-center">
                     <Icon
                       name="Check"
                       size={20}
-                      className="text-green-500 mr-3 mt-0.5 flex-shrink-0"
+                      className="text-green-500 mr-3 flex-shrink-0"
                     />
                     <span className="text-gray-700">Экспорт в PDF</span>
                   </li>
@@ -215,13 +215,8 @@ const Index = () => {
             </Card>
 
             {/* Профессиональный план */}
-            <Card className="bg-white border-2 border-blue-200 shadow-xl hover:shadow-2xl transition-all duration-300 rounded-2xl overflow-hidden relative scale-105">
-              <div className="absolute -top-0 left-1/2 transform -translate-x-1/2">
-                <div className="bg-blue-600 text-white px-6 py-2 rounded-full text-sm font-semibold">
-                  Популярный
-                </div>
-              </div>
-              <CardHeader className="text-center pb-8 pt-12">
+            <Card className="bg-white border-2 border-blue-200 shadow-xl hover:shadow-2xl transition-all duration-300 rounded-2xl overflow-hidden h-full flex flex-col">
+              <CardHeader className="text-center pb-6 pt-8 flex-shrink-0">
                 <CardTitle className="text-2xl font-semibold text-gray-900 mb-6">
                   Профессиональный
                 </CardTitle>
@@ -230,39 +225,39 @@ const Index = () => {
                 </div>
                 <p className="text-gray-600">в месяц</p>
               </CardHeader>
-              <CardContent className="px-8 pb-8">
-                <ul className="space-y-4 mb-8">
-                  <li className="flex items-start">
+              <CardContent className="px-8 pb-8 flex-grow flex flex-col justify-between">
+                <ul className="space-y-4 mb-8 flex-grow">
+                  <li className="flex items-center">
                     <Icon
                       name="Check"
                       size={20}
-                      className="text-green-500 mr-3 mt-0.5 flex-shrink-0"
+                      className="text-green-500 mr-3 flex-shrink-0"
                     />
                     <span className="text-gray-700">
                       Безлимитные презентации
                     </span>
                   </li>
-                  <li className="flex items-start">
+                  <li className="flex items-center">
                     <Icon
                       name="Check"
                       size={20}
-                      className="text-green-500 mr-3 mt-0.5 flex-shrink-0"
+                      className="text-green-500 mr-3 flex-shrink-0"
                     />
                     <span className="text-gray-700">Премиум шаблоны</span>
                   </li>
-                  <li className="flex items-start">
+                  <li className="flex items-center">
                     <Icon
                       name="Check"
                       size={20}
-                      className="text-green-500 mr-3 mt-0.5 flex-shrink-0"
+                      className="text-green-500 mr-3 flex-shrink-0"
                     />
                     <span className="text-gray-700">Все форматы экспорта</span>
                   </li>
-                  <li className="flex items-start">
+                  <li className="flex items-center">
                     <Icon
                       name="Check"
                       size={20}
-                      className="text-green-500 mr-3 mt-0.5 flex-shrink-0"
+                      className="text-green-500 mr-3 flex-shrink-0"
                     />
                     <span className="text-gray-700">
                       Приоритетная поддержка
@@ -276,8 +271,8 @@ const Index = () => {
             </Card>
 
             {/* Корпоративный план */}
-            <Card className="bg-white border-0 shadow-lg hover:shadow-xl transition-all duration-300 rounded-2xl overflow-hidden">
-              <CardHeader className="text-center pb-8 pt-8">
+            <Card className="bg-white border-0 shadow-lg hover:shadow-xl transition-all duration-300 rounded-2xl overflow-hidden h-full flex flex-col">
+              <CardHeader className="text-center pb-6 pt-8 flex-shrink-0">
                 <CardTitle className="text-2xl font-semibold text-gray-900 mb-6">
                   Корпоративный
                 </CardTitle>
@@ -288,39 +283,39 @@ const Index = () => {
                 </div>
                 <p className="text-gray-600">в месяц</p>
               </CardHeader>
-              <CardContent className="px-8 pb-8">
-                <ul className="space-y-4 mb-8">
-                  <li className="flex items-start">
+              <CardContent className="px-8 pb-8 flex-grow flex flex-col justify-between">
+                <ul className="space-y-4 mb-8 flex-grow">
+                  <li className="flex items-center">
                     <Icon
                       name="Check"
                       size={20}
-                      className="text-green-500 mr-3 mt-0.5 flex-shrink-0"
+                      className="text-green-500 mr-3 flex-shrink-0"
                     />
                     <span className="text-gray-700">
                       Неограниченные презентации
                     </span>
                   </li>
-                  <li className="flex items-start">
+                  <li className="flex items-center">
                     <Icon
                       name="Check"
                       size={20}
-                      className="text-green-500 mr-3 mt-0.5 flex-shrink-0"
+                      className="text-green-500 mr-3 flex-shrink-0"
                     />
                     <span className="text-gray-700">Командная работа</span>
                   </li>
-                  <li className="flex items-start">
+                  <li className="flex items-center">
                     <Icon
                       name="Check"
                       size={20}
-                      className="text-green-500 mr-3 mt-0.5 flex-shrink-0"
+                      className="text-green-500 mr-3 flex-shrink-0"
                     />
                     <span className="text-gray-700">Кастомные шаблоны</span>
                   </li>
-                  <li className="flex items-start">
+                  <li className="flex items-center">
                     <Icon
                       name="Check"
                       size={20}
-                      className="text-green-500 mr-3 mt-0.5 flex-shrink-0"
+                      className="text-green-500 mr-3 flex-shrink-0"
                     />
                     <span className="text-gray-700">Персональный менеджер</span>
                   </li>
