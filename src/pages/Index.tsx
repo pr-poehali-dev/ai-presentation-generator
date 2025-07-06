@@ -105,22 +105,22 @@ const Index = () => {
         <div className="container mx-auto max-w-6xl">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-gray-900 mb-4">
-              Мощные возможности
+              Возможности ИИ
             </h2>
             <p className="text-xl text-gray-600">
-              Все что нужно для создания идеальных презентаций
+              Создавайте презентации быстро и профессионально
             </p>
           </div>
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-3 gap-8 mb-12">
             <Card className="border-0 shadow-lg hover:shadow-xl transition-shadow">
               <CardHeader className="pb-4">
                 <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
-                  <Icon name="FileText" size={24} className="text-blue-600" />
+                  <Icon name="Brain" size={24} className="text-blue-600" />
                 </div>
-                <CardTitle className="text-xl">Генерация из текста</CardTitle>
+                <CardTitle className="text-xl">Анализ контента</CardTitle>
                 <CardDescription>
-                  Превращает любой текст в структурированную презентацию с
-                  логичными слайдами
+                  ИИ анализирует ваш текст и создает логичную структуру слайдов
+                  с правильным распределением информации
                 </CardDescription>
               </CardHeader>
             </Card>
@@ -131,24 +131,190 @@ const Index = () => {
                 </div>
                 <CardTitle className="text-xl">Умный дизайн</CardTitle>
                 <CardDescription>
-                  Автоматически подбирает цвета, шрифты и макеты для вашей темы
+                  Автоматически подбирает цвета, шрифты и макеты исходя из темы
+                  и стиля вашей презентации
                 </CardDescription>
               </CardHeader>
             </Card>
             <Card className="border-0 shadow-lg hover:shadow-xl transition-shadow">
               <CardHeader className="pb-4">
                 <div className="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mb-4">
-                  <Icon name="Download" size={24} className="text-green-600" />
+                  <Icon name="Zap" size={24} className="text-green-600" />
+                </div>
+                <CardTitle className="text-xl">Мгновенное создание</CardTitle>
+                <CardDescription>
+                  От идеи до готовой презентации за 30 секунд. Никаких сложных
+                  настроек — только результат
+                </CardDescription>
+              </CardHeader>
+            </Card>
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-8">
+            <Card className="border-0 shadow-lg hover:shadow-xl transition-shadow">
+              <CardHeader className="pb-4">
+                <div className="w-12 h-12 bg-orange-100 rounded-lg flex items-center justify-center mb-4">
+                  <Icon
+                    name="Languages"
+                    size={24}
+                    className="text-orange-600"
+                  />
+                </div>
+                <CardTitle className="text-xl">Многоязычность</CardTitle>
+                <CardDescription>
+                  Поддержка более 50 языков. Создавайте презентации на любом
+                  языке с правильной грамматикой
+                </CardDescription>
+              </CardHeader>
+            </Card>
+            <Card className="border-0 shadow-lg hover:shadow-xl transition-shadow">
+              <CardHeader className="pb-4">
+                <div className="w-12 h-12 bg-red-100 rounded-lg flex items-center justify-center mb-4">
+                  <Icon name="Download" size={24} className="text-red-600" />
                 </div>
                 <CardTitle className="text-xl">
                   Экспорт в любой формат
                 </CardTitle>
                 <CardDescription>
-                  Скачивайте презентации в PowerPoint, PDF, Google Slides и
-                  других форматах
+                  Скачивайте презентации в PowerPoint, PDF, Google Slides,
+                  Keynote и других популярных форматах
                 </CardDescription>
               </CardHeader>
             </Card>
+          </div>
+        </div>
+      </section>
+
+      {/* Examples Section */}
+      <section className="py-20 px-4 bg-gray-50">
+        <div className="container mx-auto max-w-6xl">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl font-bold text-gray-900 mb-4">
+              Примеры презентаций
+            </h2>
+            <p className="text-xl text-gray-600">
+              Посмотрите что может создать наш ИИ
+            </p>
+          </div>
+          <div className="grid md:grid-cols-3 gap-8">
+            <Card className="border-0 shadow-lg hover:shadow-xl transition-shadow overflow-hidden">
+              <div className="h-48 bg-gradient-to-br from-blue-500 to-purple-600 flex items-center justify-center">
+                <div className="text-white text-center">
+                  <Icon name="TrendingUp" size={48} className="mx-auto mb-2" />
+                  <p className="text-lg font-semibold">Бизнес-презентация</p>
+                </div>
+              </div>
+              <CardHeader>
+                <CardTitle className="text-lg">Квартальный отчет</CardTitle>
+                <CardDescription>
+                  15 слайдов с графиками, показателями и выводами
+                </CardDescription>
+              </CardHeader>
+              <CardContent>
+                <Button variant="outline" className="w-full">
+                  <Icon name="Eye" size={16} className="mr-2" />
+                  Посмотреть
+                </Button>
+              </CardContent>
+            </Card>
+
+            <Card className="border-0 shadow-lg hover:shadow-xl transition-shadow overflow-hidden">
+              <div className="h-48 bg-gradient-to-br from-green-500 to-teal-600 flex items-center justify-center">
+                <div className="text-white text-center">
+                  <Icon
+                    name="GraduationCap"
+                    size={48}
+                    className="mx-auto mb-2"
+                  />
+                  <p className="text-lg font-semibold">Обучающая презентация</p>
+                </div>
+              </div>
+              <CardHeader>
+                <CardTitle className="text-lg">Основы маркетинга</CardTitle>
+                <CardDescription>
+                  25 слайдов с примерами, схемами и заданиями
+                </CardDescription>
+              </CardHeader>
+              <CardContent>
+                <Button variant="outline" className="w-full">
+                  <Icon name="Eye" size={16} className="mr-2" />
+                  Посмотреть
+                </Button>
+              </CardContent>
+            </Card>
+
+            <Card className="border-0 shadow-lg hover:shadow-xl transition-shadow overflow-hidden">
+              <div className="h-48 bg-gradient-to-br from-orange-500 to-red-600 flex items-center justify-center">
+                <div className="text-white text-center">
+                  <Icon name="Lightbulb" size={48} className="mx-auto mb-2" />
+                  <p className="text-lg font-semibold">Питч-презентация</p>
+                </div>
+              </div>
+              <CardHeader>
+                <CardTitle className="text-lg">Стартап проект</CardTitle>
+                <CardDescription>
+                  10 слайдов с проблемой, решением и бизнес-моделью
+                </CardDescription>
+              </CardHeader>
+              <CardContent>
+                <Button variant="outline" className="w-full">
+                  <Icon name="Eye" size={16} className="mr-2" />
+                  Посмотреть
+                </Button>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+      </section>
+
+      {/* How it works */}
+      <section className="py-20 px-4 bg-white">
+        <div className="container mx-auto max-w-6xl">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl font-bold text-gray-900 mb-4">
+              Как это работает
+            </h2>
+            <p className="text-xl text-gray-600">
+              Создание презентации за 3 простых шага
+            </p>
+          </div>
+          <div className="grid md:grid-cols-3 gap-8">
+            <div className="text-center">
+              <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                <span className="text-2xl font-bold text-blue-600">1</span>
+              </div>
+              <h3 className="text-xl font-semibold text-gray-900 mb-4">
+                Опишите тему
+              </h3>
+              <p className="text-gray-600">
+                Напишите несколько предложений о том, что должно быть в вашей
+                презентации
+              </p>
+            </div>
+            <div className="text-center">
+              <div className="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                <span className="text-2xl font-bold text-purple-600">2</span>
+              </div>
+              <h3 className="text-xl font-semibold text-gray-900 mb-4">
+                ИИ создает структуру
+              </h3>
+              <p className="text-gray-600">
+                Искусственный интеллект анализирует текст и создает логичную
+                структуру слайдов
+              </p>
+            </div>
+            <div className="text-center">
+              <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                <span className="text-2xl font-bold text-green-600">3</span>
+              </div>
+              <h3 className="text-xl font-semibold text-gray-900 mb-4">
+                Скачайте результат
+              </h3>
+              <p className="text-gray-600">
+                Получите готовую презентацию в нужном формате и используйте её
+                для своих целей
+              </p>
+            </div>
           </div>
         </div>
       </section>
@@ -184,9 +350,7 @@ const Index = () => {
                       size={20}
                       className="text-green-500 mr-3 flex-shrink-0"
                     />
-                    <span className="text-gray-700">
-                      10 презентаций в месяц
-                    </span>
+                    <span className="text-gray-700">5 презентаций в месяц</span>
                   </li>
                   <li className="flex items-center">
                     <Icon
@@ -203,6 +367,14 @@ const Index = () => {
                       className="text-green-500 mr-3 flex-shrink-0"
                     />
                     <span className="text-gray-700">Экспорт в PDF</span>
+                  </li>
+                  <li className="flex items-center">
+                    <Icon
+                      name="Check"
+                      size={20}
+                      className="text-green-500 mr-3 flex-shrink-0"
+                    />
+                    <span className="text-gray-700">Email поддержка</span>
                   </li>
                 </ul>
                 <Button
@@ -263,6 +435,14 @@ const Index = () => {
                       Приоритетная поддержка
                     </span>
                   </li>
+                  <li className="flex items-center">
+                    <Icon
+                      name="Check"
+                      size={20}
+                      className="text-green-500 mr-3 flex-shrink-0"
+                    />
+                    <span className="text-gray-700">Брендинг презентаций</span>
+                  </li>
                 </ul>
                 <Button className="w-full h-12 rounded-full font-semibold bg-blue-600 hover:bg-blue-700 text-white transition-all">
                   Выбрать план
@@ -319,6 +499,22 @@ const Index = () => {
                     />
                     <span className="text-gray-700">Персональный менеджер</span>
                   </li>
+                  <li className="flex items-center">
+                    <Icon
+                      name="Check"
+                      size={20}
+                      className="text-green-500 mr-3 flex-shrink-0"
+                    />
+                    <span className="text-gray-700">API интеграция</span>
+                  </li>
+                  <li className="flex items-center">
+                    <Icon
+                      name="Check"
+                      size={20}
+                      className="text-green-500 mr-3 flex-shrink-0"
+                    />
+                    <span className="text-gray-700">Белая маркировка</span>
+                  </li>
                 </ul>
                 <Button
                   variant="outline"
@@ -332,6 +528,40 @@ const Index = () => {
         </div>
       </section>
 
+      {/* CTA Section */}
+      <section className="py-20 px-4 bg-gradient-to-r from-blue-600 to-purple-600">
+        <div className="container mx-auto max-w-4xl text-center">
+          <h2 className="text-4xl font-bold text-white mb-6">
+            Готовы создать свою первую презентацию?
+          </h2>
+          <p className="text-xl text-blue-100 mb-8 max-w-2xl mx-auto">
+            Присоединяйтесь к тысячам пользователей, которые уже создают
+            презентации с помощью ИИ
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Button
+              size="lg"
+              className="bg-white text-blue-600 hover:bg-gray-100 px-8 py-4 text-lg font-semibold"
+            >
+              <Icon name="Sparkles" size={20} className="mr-2" />
+              Попробовать бесплатно
+            </Button>
+            <Button
+              size="lg"
+              variant="outline"
+              className="border-white text-white hover:bg-white hover:text-blue-600 px-8 py-4 text-lg font-semibold"
+            >
+              <Icon name="Play" size={20} className="mr-2" />
+              Посмотреть демо
+            </Button>
+          </div>
+          <p className="text-blue-100 mt-6 text-sm">
+            Без обязательств • Отменить в любое время • Техническая поддержка
+            24/7
+          </p>
+        </div>
+      </section>
+
       {/* Support Section */}
       <section id="support" className="py-20 px-4 bg-white">
         <div className="container mx-auto max-w-4xl">
@@ -339,7 +569,7 @@ const Index = () => {
             <h2 className="text-4xl font-bold text-gray-900 mb-4">Поддержка</h2>
             <p className="text-xl text-gray-600">Мы всегда готовы помочь вам</p>
           </div>
-          <div className="grid md:grid-cols-2 gap-8">
+          <div className="grid md:grid-cols-3 gap-8">
             <Card className="border-0 shadow-lg">
               <CardHeader>
                 <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
@@ -376,6 +606,24 @@ const Index = () => {
                 <Button variant="outline" className="w-full">
                   <Icon name="Mail" size={16} className="mr-2" />
                   Написать письмо
+                </Button>
+              </CardContent>
+            </Card>
+            <Card className="border-0 shadow-lg">
+              <CardHeader>
+                <div className="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center mb-4">
+                  <Icon name="BookOpen" size={24} className="text-purple-600" />
+                </div>
+                <CardTitle>База знаний</CardTitle>
+                <CardDescription>
+                  Найдите ответы на частые вопросы в нашей подробной
+                  документации
+                </CardDescription>
+              </CardHeader>
+              <CardContent>
+                <Button variant="outline" className="w-full">
+                  <Icon name="BookOpen" size={16} className="mr-2" />
+                  Перейти к FAQ
                 </Button>
               </CardContent>
             </Card>
